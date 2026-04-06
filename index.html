@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Care Society - Helping Hands for Students. Join us in making a difference through charity, student support, blood donation, and social work.">
+    <meta name="keywords" content="care society, charity, students, volunteers, blood donation, social work, university">
+    <title>Superior Care Society-Helping Hands for Students  </title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text">Superior<span class="logo-highlight">Care</span>Society</span>
+                <img src="logo.png" alt="Superior Care Society Logo" class="logo-img">
+            </a>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <i data-lucide="menu"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#activities" class="nav-link">Activities</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="#volunteer" class="nav-link">Volunteer</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <canvas class="particles-canvas" id="heroCanvas"></canvas>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="fade-in-up">Helping Hands for Students</span>
+                    <span class="fade-in-up delay-1">Superior Care Society</span>
+                </h1>
+                <p class="hero-subtitle fade-in-up delay-2">
+                    Empowering students through compassion, support, and community service. 
+                    Together, we create opportunities and change lives for a brighter tomorrow.
+                </p>
+                <div class="hero-buttons fade-in-up delay-3">
+                    <a href="#volunteer" class="btn btn-primary">
+                        <i data-lucide="heart"></i>
+                        Donate Now
+                    </a>
+                    <a href="#volunteer" class="btn btn-secondary">
+                        <i data-lucide="users"></i>
+                        Join as Volunteer
+                    </a>
+                </div>
+            </div>
+            <div class="hero-logo-right fade-in-up delay-2">
+                <img src="logo.png" alt="Superior Care Society Logo" class="hero-logo-img-right">
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-image slide-in-left">
+                    <img src="logo.png" alt="Superior Care Society Logo" loading="lazy">
+                    <div class="about-image-decoration"></div>
+                </div>
+                <div class="about-content slide-in-right">
+                    <span class="section-tag">About Us</span>
+                    <h2 class="section-title">Making a Difference in Students' Lives</h2>
+                    <p class="about-text">
+                        Founded with a vision to support and empower university students, Care Society has been at the forefront of charitable initiatives since its establishment. Our mission is to create a supportive environment where every student has access to the resources they need to succeed.
+                    </p>
+                    <p class="about-text">
+                        We believe in the power of community and the impact of collective action. Through our various programs, we provide financial assistance, emotional support, and opportunities for personal growth to students from all walks of life.
+                    </p>
+                    <div class="about-vision">
+                        <div class="vision-item">
+                            <div class="vision-icon">
+                                <i data-lucide="target"></i>
+                            </div>
+                            <div class="vision-content">
+                                <h4>Our Mission</h4>
+                                <p>To support and empower students through comprehensive care, financial assistance, and community programs.</p>
+                            </div>
+                        </div>
+                        <div class="vision-item">
+                            <div class="vision-icon">
+                                <i data-lucide="eye"></i>
+                            </div>
+                            <div class="vision-content">
+                                <h4>Our Vision</h4>
+                                <p>A world where every student has equal opportunities to achieve their dreams and contribute to society.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section class="activities" id="activities">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What We Do</span>
+                <h2 class="section-title">Our Activities</h2>
+                <p class="section-subtitle">Dedicated to serving students and the community through various initiatives</p>
+            </div>
+            <div class="activities-grid">
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i data-lucide="graduation-cap"></i>
+                    </div>
+                    <h3>Student Support</h3>
+                    <p>Providing financial aid, scholarships, and academic resources to help students overcome educational barriers and achieve their goals.</p>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i data-lucide="gift"></i>
+                    </div>
+                    <h3>Charity Activities</h3>
+                    <p>Organizing fundraising events, food drives, and clothing donations to support underprivileged students and their families.</p>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i data-lucide="droplet"></i>
+                    </div>
+                    <h3>Blood Donation</h3>
+                    <p>Coordinating regular blood donation camps and emergency blood support services for those in need within our community.</p>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i data-lucide="globe"></i>
+                    </div>
+                    <h3>Social Work</h3>
+                    <p>Engaging in community development projects, environmental initiatives, and awareness campaigns for positive social change.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics" id="statistics">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i data-lucide="users"></i>
+                    </div>
+                    <div class="stat-number" data-count="2500">0</div>
+                    <div class="stat-label">Students Helped</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i data-lucide="banknote"></i>
+                    </div>
+                    <div class="stat-number" data-count="850">0</div>
+                    <div class="stat-label">Donations Collected (K)</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i data-lucide="user-check"></i>
+                    </div>
+                    <div class="stat-number" data-count="320">0</div>
+                    <div class="stat-label">Volunteers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i data-lucide="folder-check"></i>
+                    </div>
+                    <div class="stat-number" data-count="156">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Impact</span>
+                <h2 class="section-title">Recent Projects</h2>
+                <p class="section-subtitle">Explore our initiatives that are making a real difference</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=80" alt="Scholarship Program" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-small">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Scholarship Program 2024</h3>
+                        <p>Providing full academic scholarships to 200 deserving students from low-income families.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80" alt="Blood Donation Camp" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-small">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Annual Blood Drive</h3>
+                        <p>Successfully collected 500+ blood units to support local hospitals and emergency medical needs.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=600&q=80" alt="Food Distribution" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-small">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Food Relief Initiative</h3>
+                        <p>Distributed food packages to 1,000+ families affected by economic hardship during the winter season.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer Form Section -->
+    <section class="volunteer" id="volunteer">
+        <div class="container">
+            <div class="volunteer-wrapper">
+                <div class="volunteer-info">
+                    <span class="section-tag">Get Involved</span>
+                    <h2 class="section-title">Join Our Volunteer Team</h2>
+                    <p class="volunteer-text">
+                        Become a part of our dedicated team of volunteers and help us create meaningful change in the lives of students. Your time and skills can make a significant difference.
+                    </p>
+                    <div class="volunteer-benefits">
+                        <div class="benefit-item">
+                            <i data-lucide="check-circle"></i>
+                            <span>Certificate of appreciation</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i data-lucide="check-circle"></i>
+                            <span>Professional skill development</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i data-lucide="check-circle"></i>
+                            <span>Networking opportunities</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i data-lucide="check-circle"></i>
+                            <span>Make a real difference</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="volunteer-form-container">
+                    <form class="volunteer-form" id="volunteerForm">
+                        <h3>Volunteer Registration</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder=" " required>
+                                <label for="name">Full Name</label>
+                                <i data-lucide="user" class="form-icon"></i>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder=" " required>
+                                <label for="email">Email Address</label>
+                                <i data-lucide="mail" class="form-icon"></i>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="department" name="department" placeholder=" " required>
+                                <label for="department">Department</label>
+                                <i data-lucide="building-2" class="form-icon"></i>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" placeholder=" " required>
+                                <label for="phone">Phone Number</label>
+                                <i data-lucide="phone" class="form-icon"></i>
+                            </div>
+                        </div>
+                        <div class="form-group form-group-full">
+                            <textarea id="message" name="message" placeholder=" " rows="4" required></textarea>
+                            <label for="message">Why do you want to volunteer?</label>
+                            <i data-lucide="message-square" class="form-icon"></i>
+                        </div>
+                        <button type="submit" class="btn btn-submit">
+                            <span class="btn-text">Submit Application</span>
+                            <span class="btn-loader"></span>
+                            <i data-lucide="send"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call-to-Action Banner -->
+    <section class="cta-banner">
+        <div class="cta-overlay"></div>
+        <div class="container">
+            <div class="cta-content">
+                <h2>Become a Volunteer Today</h2>
+                <p>Join hundreds of volunteers making a positive impact in our community. Together, we can achieve more.</p>
+                <a href="#volunteer" class="btn btn-cta">
+                    <i data-lucide="arrow-right"></i>
+                    Get Started Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="footer-main">
+            <div class="container">
+                <!-- Dedication Section (Moved to Footer) -->
+                <div class="dedication-wrapper footer-dedication" id="dedication">
+                    <div class="dedication-content slide-in-left">
+                        <span class="section-tag footer-tag">A Message From Us</span>
+                        <h2 class="section-title footer-title">Our Dedication</h2>
+                        <p class="dedication-text footer-text">
+                            With the Grace of Allah Almighty our respected society advisor Mam Zunera Shaukat✨ and the collaboration of society members who donate to make it count🫡! We delivered our best in the way Of Allah ❤️
+                        </p>
+                    </div>
+                    <div class="dedication-video-container slide-in-right">
+                        <div class="dedication-video-wrapper" id="dedicationVideoWrapper">
+                            <video id="dedicationVideo" poster="cover.jpeg" muted loop playsinline>
+                                <source src="WhatsApp Video 2026-04-05 at 7.10.45 PM.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="dedication-video-overlay" id="dedicationVideoOverlay">
+                                <i data-lucide="play-circle"></i>
+                                <span>Hover to Play</span>
+                            </div>
+                        </div>
+                        <div class="dedication-caption footer-caption">
+                            Superior Care Society · Our Dedication
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="#" class="footer-logo">
+                            <i data-lucide="heart-handshake"></i>
+                            <span>Care Society</span>
+                        </a>
+                        <p>Empowering students through compassion, support, and community service. Together, we make a difference.</p>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                            <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#activities">Our Activities</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#volunteer">Volunteer</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Activities</h4>
+                        <ul>
+                            <li><a href="#">Student Support</a></li>
+                            <li><a href="#">Charity Events</a></li>
+                            <li><a href="#">Blood Donation</a></li>
+                            <li><a href="#">Social Work</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li>
+                                <i data-lucide="map-pin"></i>
+                                <span>University Campus, Main Building, Room 101</span>
+                            </li>
+                            <li>
+                                <i data-lucide="mail"></i>
+                                <a href="mailto:info@caresociety.edu">info@caresociety.edu</a>
+                            </li>
+                            <li>
+                                <i data-lucide="phone"></i>
+                                <a href="tel:+1234567890">+1 (234) 567-890</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 Care Society. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-icon">
+                <i data-lucide="check-circle"></i>
+            </div>
+            <h3>Application Submitted!</h3>
+            <p>Thank you for your interest in volunteering. We will contact you soon.</p>
+            <button class="btn btn-close" id="closeModal">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="particles.js"></script>
+</body>
+</html>
