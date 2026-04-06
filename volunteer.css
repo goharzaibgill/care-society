@@ -1,0 +1,813 @@
+/* Volunteer Page Specific Styles */
+
+/* Volunteer Hero */
+.volunteer-hero {
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, #1e40af 50%, #c2410c 100%);
+    padding: 140px 0 80px;
+    overflow: hidden;
+}
+
+.volunteer-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="40" r="3" fill="rgba(255,255,255,0.1)"/><circle cx="40" cy="80" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="90" cy="90" r="2" fill="rgba(255,255,255,0.1)"/></svg>');
+    background-size: 150px 150px;
+    animation: floatPattern 25s linear infinite;
+}
+
+@keyframes floatPattern {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-150px); }
+}
+
+.volunteer-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.volunteer-hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.volunteer-hero-title {
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 20px;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.volunteer-hero-subtitle {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.volunteer-hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 40px;
+}
+
+.hero-stat {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 8px;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.volunteer-hero-btn {
+    display: inline-flex;
+    gap: 10px;
+    padding: 16px 40px;
+    font-size: 1.1rem;
+    background: var(--white);
+    color: var(--primary-blue);
+}
+
+.volunteer-hero-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Why Volunteer Section */
+.why-volunteer {
+    padding: 100px 0;
+    background: var(--white);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.benefit-card {
+    background: var(--off-white);
+    border-radius: var(--radius-lg);
+    padding: 40px 30px;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    border: 1px solid var(--light-gray);
+}
+
+.benefit-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(30, 58, 138, 0.1);
+    border-color: var(--accent-orange);
+}
+
+.benefit-icon {
+    width: 70px;
+    height: 70px;
+    background: var(--accent-gradient);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+    box-shadow: 0 4px 15px rgba(234, 88, 12, 0.3);
+}
+
+.benefit-icon i {
+    width: 32px;
+    height: 32px;
+    color: var(--white);
+}
+
+.benefit-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    color: var(--primary-blue);
+    margin-bottom: 16px;
+}
+
+.benefit-card p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+/* Application Section */
+.volunteer-application {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
+.application-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.application-info {
+    padding: 40px 0;
+}
+
+.application-info .section-title {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.application-text {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.application-features {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.feature-item i {
+    width: 20px;
+    height: 20px;
+    color: var(--accent-orange);
+}
+
+.feature-item span {
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+/* Application Form Container */
+.application-form-container {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--light-gray);
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-header h3 {
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    color: var(--primary-blue);
+    margin-bottom: 8px;
+}
+
+.form-header p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+/* Form Styles */
+.volunteer-form .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.volunteer-form .form-group {
+    position: relative;
+}
+
+.volunteer-form .form-group-full {
+    grid-column: 1 / -1;
+}
+
+.volunteer-form input,
+.volunteer-form select,
+.volunteer-form textarea {
+    width: 100%;
+    padding: 16px 16px 16px 48px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    border: 2px solid var(--light-gray);
+    border-radius: var(--radius-md);
+    background: var(--white);
+    transition: all 0.3s ease;
+    outline: none;
+    color: var(--text-primary);
+}
+
+.volunteer-form input:hover,
+.volunteer-form select:hover,
+.volunteer-form textarea:hover {
+    border-color: #cbd5e1;
+}
+
+.volunteer-form input:focus,
+.volunteer-form select:focus,
+.volunteer-form textarea:focus {
+    border-color: var(--accent-orange);
+    box-shadow: 0 0 0 4px rgba(234, 88, 12, 0.1);
+    background: var(--white);
+}
+
+.volunteer-form input::placeholder,
+.volunteer-form textarea::placeholder {
+    color: transparent;
+}
+
+.volunteer-form label {
+    position: absolute;
+    left: 48px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    background: var(--white);
+    padding: 0 4px;
+}
+
+.volunteer-form textarea ~ label {
+    top: 24px;
+    transform: none;
+}
+
+.volunteer-form input:focus ~ label,
+.volunteer-form input:not(:placeholder-shown) ~ label,
+.volunteer-form textarea:focus ~ label,
+.volunteer-form textarea:not(:placeholder-shown) ~ label {
+    top: -10px;
+    transform: translateY(0);
+    font-size: 0.8rem;
+    color: var(--accent-orange);
+    font-weight: 600;
+}
+
+.volunteer-form select ~ label.select-label {
+    position: absolute;
+    left: 48px;
+    top: -10px;
+    font-size: 0.8rem;
+    color: var(--accent-orange);
+    font-weight: 600;
+    background: var(--white);
+    padding: 0 4px;
+}
+
+.volunteer-form .form-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    color: var(--text-secondary);
+    transition: color 0.3s ease;
+}
+
+.volunteer-form textarea ~ .form-icon {
+    top: 20px;
+    transform: none;
+}
+
+.volunteer-form input:focus ~ .form-icon,
+.volunteer-form select:focus ~ .form-icon,
+.volunteer-form textarea:focus ~ .form-icon {
+    color: var(--accent-orange);
+}
+
+/* Checkbox */
+.form-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin: 24px 0;
+    padding: 16px 20px;
+    background: var(--off-white);
+    border-radius: var(--radius-md);
+    border: 2px solid var(--light-gray);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.form-checkbox:hover {
+    border-color: var(--accent-orange);
+    background: rgba(234, 88, 12, 0.03);
+}
+
+.form-checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 22px;
+    height: 22px;
+    margin: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.checkbox-box {
+    width: 22px;
+    height: 22px;
+    min-width: 22px;
+    border: 2px solid var(--light-gray);
+    border-radius: 4px;
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.checkbox-box::after {
+    content: '';
+    width: 6px;
+    height: 10px;
+    border: solid var(--white);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg) scale(0);
+    transition: transform 0.2s ease;
+    margin-bottom: 2px;
+}
+
+.form-checkbox input[type="checkbox"]:checked + .checkbox-box {
+    background: var(--accent-gradient);
+    border-color: var(--accent-orange);
+}
+
+.form-checkbox input[type="checkbox"]:checked + .checkbox-box::after {
+    transform: rotate(45deg) scale(1);
+}
+
+.form-checkbox input[type="checkbox"]:focus + .checkbox-box {
+    box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.2);
+}
+
+.form-checkbox label {
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    line-height: 1.6;
+    cursor: pointer;
+    user-select: none;
+}
+
+.form-checkbox label a {
+    color: var(--accent-orange);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.form-checkbox label a:hover {
+    text-decoration: underline;
+}
+
+.volunteer-form select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 20px;
+    padding-right: 48px;
+    cursor: pointer;
+}
+
+.volunteer-form select:focus {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23ea580c' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+}
+
+.volunteer-form select option {
+    padding: 12px;
+    font-size: 1rem;
+}
+.volunteer-form .form-group label::after {
+    content: '';
+}
+
+.volunteer-form input:required ~ label,
+.volunteer-form select:required ~ label,
+.volunteer-form textarea:required ~ label {
+    color: var(--text-primary);
+}
+
+/* Form Header Enhancement */
+.form-header {
+    text-align: center;
+    margin-bottom: 35px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.form-header h3 {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    color: var(--primary-blue);
+    margin-bottom: 10px;
+}
+
+.form-header p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+/* Application Form Container Enhancement */
+.application-form-container {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 45px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--light-gray);
+}
+
+/* Submit Button Enhancement */
+.volunteer-form .btn-submit {
+    width: 100%;
+    padding: 18px 32px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+    background: var(--accent-gradient);
+    border: none;
+    border-radius: var(--radius-md);
+    color: var(--white);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.volunteer-form .btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(234, 88, 12, 0.4);
+}
+
+.volunteer-form .btn-submit i {
+    width: 20px;
+    height: 20px;
+}
+
+.btn-loader {
+    display: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top-color: var(--white);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+.volunteer-form.loading .btn-text,
+.volunteer-form.loading i {
+    display: none;
+}
+
+.volunteer-form.loading .btn-loader {
+    display: block;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 100px 0;
+    background: var(--white);
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 60px;
+}
+
+.faq-item {
+    background: var(--off-white);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--light-gray);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    border-color: var(--accent-orange);
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.faq-question:hover {
+    background: rgba(234, 88, 12, 0.05);
+}
+
+.faq-question h4 {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    color: var(--primary-blue);
+    margin: 0;
+}
+
+.faq-question i {
+    width: 20px;
+    height: 20px;
+    color: var(--accent-orange);
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-question i {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px;
+    padding: 0 24px 24px;
+}
+
+.faq-answer p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+/* CTA Section */
+.volunteer-page-cta {
+    padding: 100px 0;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, #1e40af 100%);
+    text-align: center;
+}
+
+.volunteer-page-cta h2 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    color: var(--white);
+    margin-bottom: 16px;
+}
+
+.volunteer-page-cta p {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 600px;
+    margin: 0 auto 40px;
+    line-height: 1.7;
+}
+
+.volunteer-page-cta .btn-cta {
+    display: inline-flex;
+    gap: 10px;
+    padding: 16px 40px;
+    font-size: 1.1rem;
+    background: var(--white);
+    color: var(--primary-blue);
+}
+
+.volunteer-page-cta .btn-cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    backdrop-filter: blur(4px);
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 48px;
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+    animation: modalSlideIn 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.modal-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+}
+
+.modal-icon i {
+    width: 40px;
+    height: 40px;
+    color: white;
+}
+
+.modal-content h3 {
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    color: var(--primary-blue);
+    margin-bottom: 12px;
+}
+
+.modal-content p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+
+.btn-close {
+    padding: 12px 32px;
+    font-size: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .volunteer-hero-title {
+        font-size: 2.8rem;
+    }
+
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .application-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .volunteer-hero {
+        min-height: 60vh;
+        padding: 120px 0 60px;
+    }
+
+    .volunteer-hero-title {
+        font-size: 2.2rem;
+    }
+
+    .volunteer-hero-stats {
+        gap: 30px;
+    }
+
+    .stat-number {
+        font-size: 1.8rem;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .volunteer-form .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .application-form-container {
+        padding: 30px 20px;
+    }
+
+    .volunteer-page-cta h2 {
+        font-size: 1.8rem;
+    }
+
+    .modal-content {
+        padding: 32px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .volunteer-hero-title {
+        font-size: 1.8rem;
+    }
+
+    .volunteer-hero-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-stat {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .stat-number {
+        font-size: 1.5rem;
+    }
+
+    .benefit-card {
+        padding: 30px 20px;
+    }
+}
