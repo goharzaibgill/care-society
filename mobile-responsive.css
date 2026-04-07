@@ -1,0 +1,1354 @@
+/* ========================================
+   Mobile Responsive Styles - Care Society
+   ======================================== */
+
+/* ========================================
+   1. Enhanced Mobile Navigation
+   ======================================== */
+@media (max-width: 768px) {
+    /* Navbar improvements */
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+    }
+
+    .nav-container {
+        padding: 12px 16px;
+    }
+
+    .logo-text {
+        font-size: 1.2rem;
+    }
+
+    .logo-img {
+        width: 36px;
+        height: 36px;
+    }
+
+    /* Mobile menu toggle button */
+    .mobile-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .mobile-toggle:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    .mobile-toggle:active {
+        transform: scale(0.95);
+    }
+
+    /* Mobile navigation menu */
+    .nav-links {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(180deg, var(--primary-blue) 0%, var(--primary-blue-dark) 100%);
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 80px 24px 40px;
+        gap: 0;
+        transform: translateX(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+        z-index: 999;
+        overflow-y: auto;
+    }
+
+    .nav-links.active {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-links li {
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-link {
+        display: block;
+        padding: 18px 16px;
+        font-size: 1.1rem;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .nav-link:hover {
+        background: rgba(255, 255, 255, 0.1);
+        padding-left: 24px;
+    }
+
+    /* Close button for mobile menu */
+    .nav-links .close-menu {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 44px;
+        height: 44px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-container {
+        padding: 10px 12px;
+    }
+
+    .logo-text {
+        font-size: 1rem;
+    }
+
+    .logo-img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .mobile-toggle {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+/* ========================================
+   2. Hero Section Mobile
+   ======================================== */
+@media (max-width: 768px) {
+    .hero {
+        min-height: auto;
+        padding: 100px 0 60px;
+    }
+
+    .hero-content {
+        padding: 0 16px;
+        gap: 20px;
+    }
+
+    .hero-title span:first-child {
+        font-size: 0.85rem;
+        letter-spacing: 2px;
+    }
+
+    .hero-title span:last-child {
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+
+    .hero-subtitle {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+        padding: 14px 24px;
+        font-size: 0.9rem;
+    }
+
+    .hero-logo-img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .hero-logo-right {
+        margin-top: 30px;
+    }
+
+    .hero-logo-img-right {
+        width: 120px;
+        height: 120px;
+    }
+
+    .scroll-indicator {
+        bottom: 20px;
+    }
+
+    .scroll-arrow {
+        width: 20px;
+        height: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 90px 0 50px;
+    }
+
+    .hero-title span:last-child {
+        font-size: 1.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .hero-logo-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .hero-logo-img-right {
+        width: 100px;
+        height: 100px;
+    }
+
+    .btn {
+        padding: 12px 20px;
+        font-size: 0.85rem;
+    }
+}
+
+/* ========================================
+   3. Section Headers Mobile
+   ======================================== */
+@media (max-width: 768px) {
+    section {
+        padding: 60px 0;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    .section-header {
+        margin-bottom: 40px;
+    }
+
+    .section-tag {
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+        margin-bottom: 12px;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+        line-height: 1.3;
+    }
+
+    .section-subtitle {
+        font-size: 0.95rem;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 50px 0;
+    }
+
+    .section-title {
+        font-size: 1.4rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.9rem;
+    }
+}
+
+/* ========================================
+   4. About Section Mobile
+   ======================================== */
+@media (max-width: 768px) {
+    .about-wrapper {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .about-image {
+        order: -1;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .about-image img {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .about-image-decoration {
+        width: 100px;
+        height: 100px;
+        bottom: -10px;
+        right: -10px;
+    }
+
+    .about-content .section-title {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .about-text {
+        font-size: 0.95rem;
+        text-align: center;
+    }
+
+    .vision-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 12px;
+    }
+
+    .vision-icon {
+        width: 44px;
+        height: 44px;
+    }
+
+    .vision-icon i {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* ========================================
+   5. Activities Section Mobile
+   ======================================== */
+@media (max-width: 1024px) {
+    .activities-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .activities-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .activity-card {
+        padding: 30px 24px;
+    }
+
+    .activity-icon {
+        width: 56px;
+        height: 56px;
+        margin-bottom: 16px;
+    }
+
+    .activity-icon i {
+        width: 24px;
+        height: 24px;
+    }
+
+    .activity-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .activity-card p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .activity-card {
+        padding: 24px 20px;
+    }
+
+    .activity-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .activity-icon i {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* ========================================
+   6. Statistics Section Mobile
+   ======================================== */
+@media (max-width: 1024px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .statistics {
+        padding: 50px 0;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px 16px;
+    }
+
+    .stat-icon {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 12px;
+    }
+
+    .stat-icon i {
+        width: 22px;
+        height: 22px;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .stat-label {
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 480px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .stat-item {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        text-align: left;
+    }
+
+    .stat-icon {
+        margin: 0;
+        flex-shrink: 0;
+    }
+
+    .stat-number {
+        font-size: 1.8rem;
+    }
+}
+
+/* ========================================
+   7. Projects Section Mobile
+   ======================================== */
+@media (max-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .project-image {
+        height: 200px;
+    }
+
+    .project-content {
+        padding: 24px;
+    }
+
+    .project-content h3 {
+        font-size: 1.15rem;
+    }
+
+    .project-content p {
+        font-size: 0.9rem;
+    }
+}
+
+/* ========================================
+   8. Volunteer Section Mobile
+   ======================================== */
+@media (max-width: 1024px) {
+    .volunteer-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .volunteer-wrapper {
+        gap: 30px;
+    }
+
+    .volunteer-info .section-title {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .volunteer-text {
+        text-align: center;
+        font-size: 0.95rem;
+    }
+
+    .volunteer-benefits {
+        gap: 12px;
+    }
+
+    .benefit-item {
+        font-size: 0.9rem;
+    }
+
+    .volunteer-form-container {
+        padding: 30px 20px;
+    }
+
+    .volunteer-form h3 {
+        font-size: 1.3rem;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-bottom: 16px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 14px 14px 14px 44px;
+        font-size: 0.95rem;
+    }
+
+    .form-icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    .form-group label {
+        left: 44px;
+        font-size: 0.9rem;
+    }
+}
+
+/* ========================================
+   9. CTA Banner Mobile
+   ======================================== */
+@media (max-width: 768px) {
+    .cta-banner {
+        padding: 80px 0;
+    }
+
+    .cta-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .cta-content p {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cta-banner {
+        padding: 60px 0;
+    }
+
+    .cta-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .cta-content p {
+        font-size: 0.9rem;
+    }
+
+    .btn-cta {
+        width: 100%;
+        max-width: 280px;
+        padding: 14px 24px;
+        font-size: 0.9rem;
+    }
+}
+
+/* ========================================
+   10. Dedication Section Mobile
+   ======================================== */
+@media (max-width: 1024px) {
+    .dedication-wrapper {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .dedication-wrapper {
+        padding: 20px;
+    }
+
+    .dedication-text {
+        font-size: 1rem;
+        padding-left: 16px;
+    }
+
+    .dedication-video-overlay i {
+        width: 48px;
+        height: 48px;
+    }
+
+    .dedication-video-overlay span {
+        font-size: 0.9rem;
+    }
+}
+
+/* ========================================
+   11. Footer Mobile
+   ======================================== */
+@media (max-width: 1024px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-main {
+        padding: 50px 0 30px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .footer-brand {
+        order: -1;
+    }
+
+    .footer-logo {
+        justify-content: center;
+        font-size: 1.3rem;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .footer-links h4,
+    .footer-contact h4 {
+        margin-bottom: 16px;
+    }
+
+    .footer-links ul {
+        gap: 10px;
+    }
+
+    .footer-contact li {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .footer-contact li i {
+        width: 18px;
+        height: 18px;
+    }
+
+    .footer-bottom {
+        padding: 20px 0;
+    }
+
+    .footer-bottom p {
+        font-size: 0.85rem;
+    }
+}
+
+/* ========================================
+   12. Modal Mobile
+   ======================================== */
+@media (max-width: 768px) {
+    .modal {
+        padding: 16px;
+    }
+
+    .modal-content {
+        padding: 30px 24px;
+        max-width: 100%;
+    }
+
+    .modal-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 16px;
+    }
+
+    .modal-icon i {
+        width: 30px;
+        height: 30px;
+    }
+
+    .modal-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .modal-content p {
+        font-size: 0.9rem;
+    }
+}
+
+/* ========================================
+   13. Safe Area Support (Notch Phones)
+   ======================================== */
+@supports (padding-top: env(safe-area-inset-top)) {
+    @media (max-width: 768px) {
+        .navbar {
+            padding-top: env(safe-area-inset-top);
+        }
+
+        .nav-links {
+            padding-top: calc(80px + env(safe-area-inset-top));
+        }
+
+        .hero {
+            padding-top: calc(100px + env(safe-area-inset-top));
+        }
+    }
+}
+
+/* ========================================
+   14. Landscape Mode Mobile
+   ======================================== */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: 80px 0 40px;
+    }
+
+    .hero-title span:last-child {
+        font-size: 1.6rem;
+    }
+
+    .hero-logo-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .nav-links {
+        padding-top: 60px;
+    }
+
+    .nav-link {
+        padding: 12px 16px;
+    }
+}
+
+/* ========================================
+   15. Touch Device Optimizations
+   ======================================== */
+@media (hover: none) and (pointer: coarse) {
+    .btn:hover {
+        transform: none;
+    }
+
+    .btn:active {
+        transform: scale(0.98);
+    }
+
+    .activity-card:hover,
+    .project-card:hover,
+    .member-card:hover {
+        transform: none;
+    }
+
+    .activity-card:active,
+    .project-card:active,
+    .member-card:active {
+        transform: scale(0.98);
+    }
+}
+
+/* ========================================
+   16. High DPI / Retina Display
+   ======================================== */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .logo-img,
+    .hero-logo-img,
+    .hero-logo-img-right {
+        image-rendering: -webkit-optimize-contrast;
+    }
+}
+
+/* ========================================
+   17. Reduced Motion Preference
+   ======================================== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .hero-content {
+        animation: none;
+    }
+
+    .scroll-arrow::before {
+        animation: none;
+    }
+}
+
+/* ========================================
+   19. Team Page Mobile Styles
+   ======================================== */
+@media (max-width: 1024px) {
+    .executive-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+    
+    .members-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .team-hero {
+        padding: 120px 0 60px;
+        min-height: 40vh;
+    }
+    
+    .team-hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .team-hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .executive-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .executive-image {
+        height: 250px;
+    }
+    
+    .executive-info {
+        padding: 20px;
+    }
+    
+    .executive-name {
+        font-size: 1.1rem;
+    }
+    
+    .executive-role {
+        font-size: 0.85rem;
+    }
+    
+    .executive-bio {
+        font-size: 0.9rem;
+    }
+    
+    /* Members filter scrollable on mobile */
+    .members-filter {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 10px;
+        gap: 8px;
+        justify-content: flex-start;
+    }
+    
+    .members-filter::-webkit-scrollbar {
+        height: 4px;
+    }
+    
+    .members-filter::-webkit-scrollbar-thumb {
+        background: var(--accent-orange);
+        border-radius: 2px;
+    }
+    
+    .filter-btn {
+        flex-shrink: 0;
+        padding: 10px 16px;
+        font-size: 0.85rem;
+    }
+    
+    .members-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    
+    .member-card {
+        padding: 0;
+    }
+    
+    .member-content {
+        padding: 20px 16px;
+    }
+    
+    .member-avatar {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .member-avatar span {
+        font-size: 1.1rem;
+    }
+    
+    .member-name {
+        font-size: 1rem;
+    }
+    
+    .member-details {
+        font-size: 0.75rem;
+    }
+    
+    .team-cta {
+        padding: 80px 0;
+    }
+    
+    .team-cta-title {
+        font-size: 1.8rem;
+    }
+    
+    .team-cta-text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .executive-grid {
+        grid-template-columns: 1fr;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+    
+    .executive-image {
+        height: 280px;
+    }
+    
+    .members-grid {
+        grid-template-columns: 1fr;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+    
+    .member-content {
+        padding: 24px 20px;
+    }
+    
+    .member-avatar {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .member-avatar span {
+        font-size: 1.2rem;
+    }
+    
+    .team-cta-title {
+        font-size: 1.6rem;
+    }
+    
+    .team-cta-btn {
+        padding: 14px 28px;
+        font-size: 0.9rem;
+    }
+}
+
+/* ========================================
+   20. Gallery Page Mobile Styles
+   ======================================== */
+@media (max-width: 1024px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-hero {
+        padding: 120px 0 60px;
+        min-height: 35vh;
+    }
+    
+    .gallery-hero-title {
+        font-size: 2rem;
+    }
+    
+    .gallery-hero-subtitle {
+        font-size: 0.95rem;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .gallery-item {
+        aspect-ratio: 16/10;
+    }
+    
+    /* Lightbox mobile improvements */
+    .lightbox-content {
+        padding: 16px;
+    }
+    
+    .lightbox-prev,
+    .lightbox-next {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .lightbox-close {
+        top: 16px;
+        right: 16px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .lightbox-counter {
+        bottom: 16px;
+        font-size: 0.85rem;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-hero-title {
+        font-size: 1.6rem;
+    }
+    
+    .gallery-header h2 {
+        font-size: 1.4rem;
+    }
+    
+    .gallery-item {
+        aspect-ratio: 4/3;
+    }
+}
+
+/* ========================================
+   21. Volunteer Page Mobile Styles
+   ======================================== */
+@media (max-width: 1024px) {
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .application-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .volunteer-hero {
+        min-height: 50vh;
+        padding: 120px 0 60px;
+    }
+    
+    .volunteer-hero-title {
+        font-size: 2rem;
+    }
+    
+    .volunteer-hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .volunteer-hero-stats {
+        gap: 30px;
+        margin: 30px 0;
+    }
+    
+    .hero-stat .stat-number {
+        font-size: 1.8rem;
+    }
+    
+    .hero-stat .stat-label {
+        font-size: 0.85rem;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .benefit-card {
+        padding: 30px 24px;
+    }
+    
+    .benefit-icon {
+        width: 56px;
+        height: 56px;
+    }
+    
+    .benefit-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .benefit-card p {
+        font-size: 0.9rem;
+    }
+    
+    .application-info .section-title {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .application-text {
+        text-align: center;
+        font-size: 0.95rem;
+    }
+    
+    .application-features {
+        gap: 12px;
+    }
+    
+    .feature-item {
+        font-size: 0.9rem;
+    }
+    
+    .application-form-container {
+        padding: 30px 20px;
+    }
+    
+    .volunteer-form .form-header h3 {
+        font-size: 1.3rem;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-bottom: 16px;
+    }
+    
+    .volunteer-form input,
+    .volunteer-form select,
+    .volunteer-form textarea {
+        padding: 14px 14px 14px 44px;
+        font-size: 0.95rem;
+    }
+    
+    .form-icon {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .volunteer-form label {
+        left: 44px;
+        font-size: 0.9rem;
+    }
+    
+    .form-checkbox {
+        padding: 14px 16px;
+        gap: 10px;
+    }
+    
+    .checkbox-box {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .form-checkbox label {
+        font-size: 0.85rem;
+    }
+    
+    .volunteer-form .btn-submit {
+        padding: 16px 24px;
+        font-size: 1rem;
+    }
+    
+    .faq-section {
+        padding: 60px 0;
+    }
+    
+    .faq-item {
+        margin-bottom: 12px;
+    }
+    
+    .faq-question {
+        padding: 20px;
+    }
+    
+    .faq-question h4 {
+        font-size: 1rem;
+    }
+    
+    .faq-answer {
+        padding: 0 20px;
+    }
+    
+    .faq-answer p {
+        font-size: 0.9rem;
+    }
+    
+    .volunteer-page-cta {
+        padding: 80px 0;
+    }
+    
+    .volunteer-page-cta h2 {
+        font-size: 1.8rem;
+    }
+    
+    .volunteer-page-cta p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .volunteer-hero-title {
+        font-size: 1.6rem;
+    }
+    
+    .volunteer-hero-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .hero-stat {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+    
+    .hero-stat .stat-number {
+        font-size: 1.5rem;
+    }
+    
+    .benefit-card {
+        padding: 24px 20px;
+    }
+    
+    .benefit-icon {
+        width: 48px;
+        height: 48px;
+    }
+    
+    .application-form-container {
+        padding: 24px 16px;
+    }
+    
+    .volunteer-form .form-header h3 {
+        font-size: 1.2rem;
+    }
+    
+    .volunteer-form input,
+    .volunteer-form select,
+    .volunteer-form textarea {
+        padding: 12px 12px 12px 40px;
+    }
+    
+    .volunteer-page-cta h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* ========================================
+   22. Form Elements Mobile Improvements
+   ======================================== */
+@media (max-width: 768px) {
+    /* Improve touch targets */
+    input,
+    textarea,
+    select,
+    button {
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+    
+    /* Better form spacing */
+    .form-group {
+        margin-bottom: 16px;
+    }
+    
+    /* Checkbox and radio improvements */
+    input[type="checkbox"],
+    input[type="radio"] {
+        width: 22px;
+        height: 22px;
+        min-width: 22px;
+    }
+}
+
+/* ========================================
+   23. Tablet Specific Adjustments
+   ======================================== */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero-title span:last-child {
+        font-size: 2.4rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .about-wrapper {
+        gap: 40px;
+    }
+    
+    .about-image {
+        max-width: 400px;
+    }
+    
+    .executive-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .members-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ========================================
+   24. Large Screen Optimizations
+   ======================================== */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+    
+    .hero-title span:last-child {
+        font-size: 4rem;
+    }
+    
+    .members-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
